@@ -1,11 +1,11 @@
 /* Input Format: N = 6
 Result:   
-A
-A B
-A B C
-A B C D
-A B C D E
-A B C D E F
+A 
+B B
+C C C
+D D D D
+E E E E E
+F F F F F F
 */
 #include<bits/stdc++.h>
 using namespace std;
@@ -15,13 +15,12 @@ void pattern(int n)
     int i,j,a=1;
     for(i=1;i<=n;i++)
     {
-        ch='A';
         for(j=1;j<=i;j++)
         {
             cout<<ch<<" ";
-            ch+=1;
         }
         cout<<endl;
+        ch+=1;
     }
     
 }
