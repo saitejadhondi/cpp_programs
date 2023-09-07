@@ -11,21 +11,23 @@ Result:
 using namespace std;
 void pattern(int n)
 {
-    int i,j,a=0;
+    int i,j,a=1;
     for(i=1;i<=n;i++)
     {
         for(j=1;j<=i;j++)
         {
-            if(j%2==0)
-            {
-                cout<<a;
-                a=0;
-            }
-            else
+         cout<<a;
+         a=1-a;
+         /*   if(j%2==0)
             {
                 cout<<a;
                 a=1;
             }
+            else
+            {
+                cout<<a;
+                a=0;
+            } */
         }
         cout<<endl;
         if(i%2==0)
